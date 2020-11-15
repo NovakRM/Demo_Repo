@@ -1,0 +1,90 @@
+/**
+ * Float Layout Activity
+ **/
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+}
+
+header {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  background-color: #FFA500;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#left {
+  float: left;
+  padding: 20px;
+  width: 33.33%; 
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  background-color: #30948D;
+}
+
+#middle {
+  float: left;
+  padding: 20px; 
+  width: 33.33%; 
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  background-color: #9E1212;
+}
+
+#right {
+  float: left;
+  padding: 20px;   
+  width: 33.33%; 
+  color: #FFFFFF;
+  background-color: #30948D;
+}
+
+#full {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  height: 200px;
+  clear: both;
+  color: #FFFFFF;
+  background-color: #394549;
+}
+
+/**Clear property: Specifies where content is allowed to float. 
+Not sure why this works, it's a little ugly when it breaks wraps?
+Tested. Doesn't seem like it's doing much in my CSS.**/
+
+#division {
+  margin-top: 55px;
+  padding: 15px;
+  color: #FFFFFF;
+  background-color: #6ea3da;
+}
+
+aside {
+  float: left;
+  height: 80%;
+  width: 25%;
+  margin-top: 15px;
+  margin-left: 20px;
+  color: #FFFFFF;
+  background-color: #a6b747;
+}
+
+.clearfix::after{
+  content: “”;
+  display: table;
+  clear: both; 
+}
+
+footer {
+  padding: 20px;
+  background: #FFA500;
+}
